@@ -1,0 +1,498 @@
+/* 
+Assignment - Yadwinderpal Singh
+style 1  
+*/
+
+.visible-s-2,
+.visible-s-3,
+.hidden-s-1 {
+    display: none !important
+}
+
+
+/*-------------------------------------------
+------------------ Navbar -------------------
+-------------------------------------------*/
+
+header {
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    background: #000000;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+}
+
+.logo {
+    float: right;
+    max-width: 150px;
+    padding: 10px 0 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav ul {
+    float: left
+}
+
+.nav ul>li {
+    float: left;
+}
+
+.nav ul>li>a {
+    font-family: 'open sans', sans-serif;
+    font-size: 12px;
+    padding: 15px 25px;
+    color: #827F7F;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.nav ul>li>a:focus,
+.nav ul>li>a:hover,
+.nav ul>li.active>a {
+    background-color: #827F7F !important;
+    color: #000000
+}
+
+
+/*-------------------------------------------
+------------------ Content ------------------
+-------------------------------------------*/
+
+#content {
+    top: 0;
+    height: calc(100% - 47px) !important;
+    overflow: auto;
+    background: #827F7F;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------- home -------------------*/
+
+body.home .container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.poster {
+    width: 100%;
+    margin: 0;
+    height: 580px;
+    background: url("/images/agency.jpeg") no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.poster .poster-wrapper {
+    margin: 12% 15% 0;
+    background: #000;
+    opacity: 0.7;
+    padding: 30px 0 50px;
+    text-align: center;
+}
+
+.poster .poster-wrapper h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 52px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.poster .poster-wrapper h2 {
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+}
+
+.who-we-are,
+.works {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.who-we-are h2,
+.works h2 {
+    font-size: 30px;
+}
+
+.who-we-are p {
+    padding: 0 60px;
+    font-size: 16px;
+}
+
+.quick-contact{
+    background: url("/images/quick-contact.jpg");
+    padding: 40px 0;
+    text-align: center;
+}
+
+.quick-contact h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.quick-contact h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #827F7F;
+}
+
+.quick-contact a {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.works .portfolio,
+.works .portfolio-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: -6px;
+}
+
+.works .portfolio-item figure,
+.works .portfolio-item .item-content {
+    width: 50%;
+    float: left;
+    height: auto;
+    color: #fff;
+}
+
+.works .portfolio-item figure a {
+    display: block;
+    background: url("/images/portfolio.jpg") no-repeat 50% 50%;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.works .portfolio-item .item-content {
+    padding: 50px 60px;
+    text-align: left;
+}
+
+.works .portfolio-item .item-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.works .portfolio-item .item-content p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 16px;
+    color: #827F7F;
+}
+
+.works .portfolio-item .item-content p strong {
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.works .portfolio-item .item-content p + p + p {
+    margin: 15px 0 30px;
+}
+
+.works .portfolio {
+    padding: 40px 0 50px;
+}
+
+.portfolio-item {
+    background: #000;
+}
+
+.works a.btn {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.works .site-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+/*----------------- About --------------------*/
+
+.about{
+    float: left;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+    color: #ffffff;
+    min-height: 300px;
+}
+
+.about .fa{
+    font-size: 50px;
+}
+
+.about h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.team{
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+.team h2{
+    text-align: center
+}
+
+.team .team-member {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.team-member figure img {
+    width: 100%;
+    border: 3px solid #000;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 5px;
+    font-weight: 300;
+}
+
+.team-member h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+/*----------------- Services --------------------*/
+
+.our-services{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.our-services h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+
+.our-services p {
+    margin-bottom: 30px;
+}
+
+.service {
+    float: left;
+    width: 25%;
+    padding: 30px 15px;
+}
+
+.service .fa {
+    color: #000000;
+    font-size: 36px;
+    height: 80px;
+    width: 80px;
+    line-height: 2;
+}
+
+/*--------------- Contact --------------------*/
+
+
+
+body.contactus #content h1 {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #000000;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.contact,
+.map {
+    display: inline-block;
+    width: 100%;
+    background: #ffffff;
+}
+
+.contact {
+    border-right: 7.5px solid #827F7F;
+    padding: 15px 30px;
+}
+
+.map {
+    border-left: 7.5px solid #827F7F;
+}
+
+#contact-form {
+    display: inline-block;
+    width: 100%;
+}
+
+#contact-form .form-group {
+    position: relative;
+}
+
+#contact-form .form-group label {
+    position: absolute;
+    top: 7px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #555;
+    z-index: 1;
+    left: 15px;
+}
+
+#contact-form .form-control:focus + label,
+#contact-form .form-control.input-filled + label {
+    color: transparent;
+}
+
+#contact-form .form-control {
+    padding: 10px 15px;
+    width: 100%;
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background: none;
+    border: 1px solid;
+    border-color: #555;
+}
+
+#contact-form textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.btn
+{
+    background: none;
+    border-color: #000000;
+    color: #000000;
+    font-weight: 300;
+    padding: 10px 25px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #fff;
+    background: #827F7F;
+    border-color: #827F7F;
+}
+
+.social,
+.call-fax {
+    padding: 25px 30px;
+}
+
+.social h1,
+.call-fax h1 {
+    float: left;
+    margin-top: 10px !important;
+}
+
+.social ul,
+.call-fax ul {
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+}
+
+.social ul li,
+.call-fax ul li {
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+.social ul li a,
+.call-fax ul li a {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #000000;
+}
+
+.social ul li a:hover,
+.call-fax ul li a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------------------------------------------
+------------ Style Switcher -----------------
+-------------------------------------------*/
+
+#style-switcher {
+    border-color: #000000 !important;
+}
+
+#toggle-switcher {
+    border-color: #000000 !important;
+}
+
+#toggle-switcher [class*=fa] {
+    color: #000000;
+}
+
+#style-switcher h1 {
+    color: #000000;
+}
+
+#style-switcher ul li {
+    border-color: #000000;
+    color: #000000;
+}
+
+#style-switcher ul li:hover,
+#style-switcher ul li.active {
+    background: #000000;
+    color: #ffffff;
+}
